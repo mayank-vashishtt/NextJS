@@ -53,3 +53,39 @@ what does next.js do?
 1.Fetching the index.html from the CDN and it have all the data (for blogging website all the blogs)
 2.then script.js and all 
 
+
+-----------
+
+if you want your website to be SEO optimised then use Next otherwise react as next is expensive while hosting 
+
+--------
+
+
+Next.js provides you the following upsides over React
+
+1. Server side rendering - Get’s rid of SEO problems
+2.API routes - Single codebase with frontend and backend
+3.File based routing (no need for react-router-dom)
+4.Bundle size optimisations, Static site generation
+5.Maintained by the Vercel tea
+
+Downsides - 
+1.Can’t be distributed via a CDN, always needs a server running that does server side rendering and hence is expensive
+2.Very opinionated, very hard to move out of it
+
+
+----- 
+
+npx create-next-app@latest
+
+next.config.mjs - Nextjs configuration file
+tailwind.config.js - Tailwind configuration file
+app - Contains all your code/components/layouts/routes/apis
+
+npm run dev
+
+
+------ 
+
+
+next have a file based router
