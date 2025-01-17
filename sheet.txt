@@ -1,0 +1,55 @@
+nextJS is own by vercel 
+
+
+
+framework vs library topic
+
+React is a library focused on building user interfaces, 
+while Next.js is a framework that builds on React and provides additional features 
+like routing, server-side rendering, and static site generation. Next.js offers a more complete, 
+opinionated setup for full-stack web development.
+
+
+
+NextJS was a framework that was introduced because of some minor inconviniences in React
+
+some imp ones are 
+1.In a React project, you have to maintain a separate Backend project for your API routes
+2.React does not provide out of the box routing (you have to use react-router-dom)
+3.React is not SEO Optimised, earlier it was a big problem 
+4.Waterfalling problem
+
+
+
+# React is not SEO Optimised
+Google/Bing has a bunch of crawlers that hit websites and figure out what the website does. 
+
+It ranks it on Google based on the HTML it gets back
+The crawlers DONT usually run your JS and render your page to see the final output. 
+
+While Googlebot can run JavaScript, dynamically generated content is harder for the scraper to index
+
+
+What does the Googlebot get back when they visit a website written in react?
+Googlebot has no idea on what the project is. It only sees Vite + React + TS in the original HTML response.
+Ofcourse when the JS file loads eventually, things get rendered but the Googlebot doesn’t discover this content very well.
+
+
+#Waterfalling problem
+
+1.Fetching the index.html from the CDN
+2.Fetching script.js from CDN
+3.Checking if user is logged in (if not, redirect them to /login page)
+4.Fetching the actual blogs
+
+There are 4 round trips that happen one after the other (sequentially)
+
+The "waterfalling problem" in React, and more broadly in web development, 
+refers to a scenario where data fetching operations are chained or dependent on each other in a way 
+that leads to inefficient loading behavior.
+
+what does next.js do? 
+
+1.Fetching the index.html from the CDN and it have all the data (for blogging website all the blogs)
+2.then script.js and all 
+
