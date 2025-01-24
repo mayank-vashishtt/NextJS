@@ -127,3 +127,16 @@ it means now if you write something above children in this file then it will com
 
 ----------------------
 
+Layouts in sub routes
+
+basically this to make nav bar or something like that banner or footer for certain pages  
+
+--------------------
+
+Merging routes 
+What if you wan’t to get the banner in both signup and signin?
+
+fo that make a auth folder and put the both signin and signout folder in it
+then put layout.tsx there in the auth folder
+
+
