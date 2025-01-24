@@ -171,3 +171,56 @@ and onclick handler use case with "use client"
 
 
 -----------------
+
+Client and server components
+
+
+NextJS expects you to identify all your components as either client or server
+
+As the name suggests
+Server components are rendered on the server
+Client components are pre-rendered and are pushed to the client to be rendered again
+
+By default, all components are server components.
+
+if you wan’t to mark a component as a client component, you need to add the following to the top of the component - 
+"use client"
+
+
+----------------
+
+When should you create client components ?
+
+Whenever you get an error that tells you that you need to create a client component
+Whenever you’re using something that the server doesn’t understand (useEffect, useState, onClick…)
+
+
+RULE OF THUMB 
+a component structure for a web application. It highlights the hierarchical layout of components, 
+starting from the top-level Layout component, which branches into Nav, Page, and Footer. Under Nav, there are Logo and Links, 
+with Links labeled as a "Client Module." The Page component contains Posts, with a "Client Module" called LikeButton. 
+The use of "Client Module" likely indicates interactive or client-side functionality for these components. 
+This structure is typical in modular web development frameworks.
+
+
+
+client page is not SEO Optimised
+so we should create a file button that is use client 
+so rest sign in is SEO optimised
+
+You defer the client as much it is possible 
+
+
+---------------
+
+metdata --- 
+
+Metadata is like a label or a tag that gives information about other data. 
+For example, if you have a photo, the metadata might include the date it was taken, the location, and the camera settings. 
+It's information about the information.
+
+
+but is good to use server side rather then meta tag as how much will you say in meta tag
+
+
+
