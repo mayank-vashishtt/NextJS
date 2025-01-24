@@ -97,3 +97,33 @@ For example, if you have a file named about.js in the pages directory, it will a
 This approach simplifies the process of defining routes, as you don't need to manually configure them in a separate routing file. 
 Instead, you just create files and folders that match the desired URL structure.
 
+
+--------
+
+Server side rendering
+
+its first html page have a lot of things to know what is this 
+
+Now if GoogleBot tries to scrape your page, it’ll understand that this is a signup page without running any Javascript.
+The first index.html file it get’s back will have context about the page since it was server side rendered
+
+
+-------------------
+
+in next.js even for the things which we dont have any route , we can have default 404 page too 
+
+
+
+-------------------
+
+
+layouts 
+
+You’ll notice a file in your app folder called layout.tsx
+
+Layouts let you wrap all child pages inside some logic.
+
+it means now if you write something above children in this file then it will come to every file 
+
+----------------------
+
