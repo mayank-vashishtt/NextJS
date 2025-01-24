@@ -136,7 +136,38 @@ basically this to make nav bar or something like that banner or footer for certa
 Merging routes 
 What if you wan’t to get the banner in both signup and signin?
 
+
+first approach : 
+
+You can access the routes at 
+http://localhost:3000/auth/signup and http://localhost:3000/auth/signin
+
+
 fo that make a auth folder and put the both signin and signout folder in it
 then put layout.tsx there in the auth folder
 
 
+second approach: 
+
+without changing the routes ...  ? 
+
+You can use create a new folder with () around the name. 
+This folder is ignored by the router.'
+
+just replace folder auth by (auth)
+
+
+
+----------------------
+
+components directory
+
+
+basically put all the logic there in the component folder 
+and just call in the app folder where we were doing before 
+
+
+and onclick handler use case with "use client" 
+
+
+-----------------
